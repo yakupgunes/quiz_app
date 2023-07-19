@@ -9,20 +9,24 @@ class StartScreen extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset("assets/images/quiz-logo.jpg"),
-          const SizedBox(height: 20),
+          Image.asset(
+            "assets/images/quiz-logo.jpg",
+            width: 300,
+          ),
+          const SizedBox(height: 80),
           const Text(
             "Learn Flutter the Fun Way!",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 24),
           ),
           const SizedBox(height: 20),
-          OutlinedButton(
+          OutlinedButton.icon(
+            onPressed: () {},
             style: OutlinedButton.styleFrom(
               foregroundColor: Colors.white,
               elevation: 0,
             ),
-            onPressed: () {},
-            child: const Text(
+            icon: const Icon(Icons.arrow_right, color: Colors.black),
+            label: const Text(
               "Start Quiz",
               style: TextStyle(color: Colors.black),
             ),
