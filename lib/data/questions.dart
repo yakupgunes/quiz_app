@@ -2,12 +2,12 @@ import 'package:quiz_app/models/quiz_questions.dart';
 
 const questions = [
   QuizQuestion(
-    'What is flutter?',
+    'What are the main building blocks of Flutter UIs?',
     [
-      'Flutter is an open-source UI toolkit',
-      'Flutter is an open-source backend development framework',
-      'Flutter is an open-source programming language for cross-platform applications',
-      'Flutters is a DBMS toolkit',
+      'Widgets',
+      'Components',
+      'Blocks',
+      'Functions',
     ],
   ),
   QuizQuestion(
@@ -62,6 +62,15 @@ const questions = [
       'Debug',
       'Test',
       'Profile',
+    ],
+  ),
+  QuizQuestion(
+    'What type of test can examine your code as a complete system?',
+    [
+      'Integration Tests',
+      'Widget tests',
+      'Unit tests',
+      'All of the above',
     ],
   ),
 ];
